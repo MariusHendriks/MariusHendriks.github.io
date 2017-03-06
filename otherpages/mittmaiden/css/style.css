@@ -180,14 +180,14 @@ video#bgv{
 	height: auto;
 	background-image: url("Untitled.png") no-repeat;
 	background-size: cover;
-	margin-top: 10%;
+	margin-top: 3%;
 }
 .logo{
 	width: 30%;
 	height: 30%;
 }
 .headertext{
-	font-size: 36px;
+	font-size: 30px;
 	text-transform: uppercase;
 	color: #000;
     letter-spacing: 2px;
