@@ -89,6 +89,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+
 /* Navigation */
 #menu {
 	padding: 20px;
@@ -173,10 +174,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Header Section */
 
 video#bgv{
-	min-width: 70%;
-	min-height: 70%;
-	margin-left: 15%;
-	margin-top: 5%;
+	min-width: 100%;
+	min-height: 100%;
 	width: auto;
 	height: auto;
 	background-image: url("Untitled.png") no-repeat;
