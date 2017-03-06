@@ -180,6 +180,7 @@ video#bgv{
 	height: auto;
 	background-image: url("Untitled.png") no-repeat;
 	background-size: cover;
+	margin-top: 10%;
 }
 .logo{
 	width: 30%;
