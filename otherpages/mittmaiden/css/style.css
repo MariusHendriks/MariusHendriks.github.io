@@ -95,7 +95,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Navigation */
 #menu {
 	padding-top: 60px;
-	padding-right: 100px;
+	padding-right: 80px;
 	transition: all 0.8s;
 }
 #menu.navbar-default {
