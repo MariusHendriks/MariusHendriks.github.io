@@ -234,6 +234,7 @@ video#bgv{
 	height: auto;
 	background-image: url("about.png") no-repeat;
 	background-size: cover;
+	opacity: 1;
 }
 @media screen and (max-width: 1600px;) {
 	video#bgv{
