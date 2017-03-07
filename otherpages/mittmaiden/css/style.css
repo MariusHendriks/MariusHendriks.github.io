@@ -108,7 +108,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
-	color: #ddd;
+	color: #bdc3c7;
 	font-weight: 900;
 	font-size: 15px;
 	padding: 5px 0;
@@ -257,6 +257,7 @@ video#bgv{
     min-height: 100%;
 	width: auto;
 	height: 800px;
+	background-position: center;
 }
 .headertext{
 	font-size: 30px;
@@ -624,7 +625,7 @@ label {
 	color: #444;
 	background-color: #fff;
 	background-image: none;
-	border: 1px solid #ddd;
+	border: 1px solid #bdc3c7;
 	border-radius: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
