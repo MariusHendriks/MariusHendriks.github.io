@@ -115,14 +115,22 @@ function fade(element) {
 //switch video
 vid.addEventListener("ended", hideVideo, false);
 aftervideo.style.display='none';
+<<<<<<< HEAD
 aftervideo.style.opacity = 0; 
+=======
+aftervideo.style.opacity = 0;
+>>>>>>> c4320f8213b5d552c3f73279483cb3fcaad6f1fa
 function hideVideo() {
 	setTimeout(
 		function(){
 			var vid=document.getElementById('bgv');
 			var aftervideo=document.getElementById('aftervideo');
 			vid.removeEventListener("ended", hideVideo, false);
+<<<<<<< HEAD
 			vid.style.display='none'; 
+=======
+			vid.style.display='none';
+>>>>>>> c4320f8213b5d552c3f73279483cb3fcaad6f1fa
 
 			
 			fade(aftervideo);
@@ -134,6 +142,7 @@ function hideVideo() {
 //fade in image
 
 	
+<<<<<<< HEAD
 $(document).ready(function(){
     $('.awesome-tooltip').tooltip({
         placement: 'left'
@@ -194,6 +203,9 @@ $(document).ready(function(){
 /* end dot nav */
 });
 
+=======
+	
+>>>>>>> c4320f8213b5d552c3f73279483cb3fcaad6f1fa
 
 }
 main();
