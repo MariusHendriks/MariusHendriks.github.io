@@ -198,6 +198,14 @@ video#bgv{
 	width: 30%;
 	height: 30%;
 }
+.aftervideo{
+	background-image: url("../img/menu-bg.jpg");
+	background-size: cover;
+	min-width: 100%;
+    min-height: 100%;
+	width: auto;
+	height: 800px;
+}
 .headertext{
 	font-size: 30px;
 	text-transform: uppercase;

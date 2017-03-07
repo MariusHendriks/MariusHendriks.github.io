@@ -49,8 +49,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#Story" class="page-scroll">The story</a></li>
-        <li><a href="#restaurant-menu" class="page-scroll">Mitts</a></li>
-        <li><a href="#portfolio" class="page-scroll">Contact</a></li>
+        <li><a href="#Mitts" class="page-scroll">Mitts</a></li>
+        <li><a href="#contact" class="page-scroll">Contact</a></li>
         <!--<li><a href="#team" class="page-scroll">Chefs</a></li>
         <li><a href="#call-reservation" class="page-scroll">Contact</a></li>-->
       </ul>
@@ -65,28 +65,74 @@
 
 
 <div class="vidBox" id="box">
-    <video class="vid" poster="Untitled.png"  preload muted autoplay  id="bgv" height="240" width="360">
+    <video class="vid" poster="menu-bg.jpg".png"  preload muted autoplay  id="bgv">
         <source src="../videos/MM.mov" type="video/mov">
 		<source src="video/MM.mp4" type="video/mp4">
     </video>
-    <div id="aftervideo" style="display:none; width:400px; height:300px; background-color:#f0f0f0">
-        This appears after the video ends
+	<div id="aftervideo" class="aftervideo">
+
     </div>
 </div>
+
 <script>
-    var vid=document.getElementById('bgv');
-    vid.addEventListener("ended", hideVideo, false);
+// start video fade in
+var e = document.getElementById("bgv");
+e.style.opacity = 0;
+
+var vid = document.getElementById("bgv");
+vid.oncanplaythrough = function() {
+	var e = document.getElementById('bgv');
+    fade(e);
+};
+vid.addEventListener('ended', function () {
+  var op2 = 1;
+	var timer2 = setInterval(function() {
+        if (op2 <= 0) {
+        	clearInterval(timer2);
+        }
+        vid.style.opacity = op2;
+        vid.style.filter = 'alpha(opacity=' + op2 * 100 + ")";
+        op2 -= op2 * 0.1 || 0.1;
+    }, 50);
+});
+//start video fade out
+function fade(element) {
+    var op = 0;
+    var timer = setInterval(function() {
+        if (op >= 1) {
+        	clearInterval(timer);
+        	vid.play();
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1 || 0.1;
+    }, 50);
+}
+//switch video
+vid.addEventListener("ended", hideVideo, false);
+aftervideo.style.display='none';
+aftervideo.style.opacity = 0;
+function hideVideo() {
+	setTimeout(
+		function(){
+			var vid=document.getElementById('bgv');
+			var aftervideo=document.getElementById('aftervideo');
+			vid.removeEventListener("ended", hideVideo, false);
+			vid.style.display='none';
+
+			
+			fade(aftervideo);
+			aftervideo.style.display='block';
+			
+		}, 3000);
+	}
+
+//fade in image
+
 	
-    function hideVideo() {
-        var vid=document.getElementById('bgv');
-        var aftervideo=document.getElementById('aftervideo');
-        vid.removeEventListener("ended", hideVideo, false);
-        vid.style.display='none';
-        aftervideo.style.display='block';
-
-    }
+	
 </script>
-
+    
 <!-- About Section -->
 <!--
 <div id="Story">
@@ -109,7 +155,8 @@
 </div>
 <!-- Restaurant Menu Section -->
 <!--
-<div id="restaurant-menu">
+<div id="mitts">
+<div id="mitts">
   <div class="section-title text-center center">
     <div class="overlay">
       <h2>Material</h2>
@@ -230,7 +277,7 @@
 </div>
 <!-- Portfolio Section -->
 <!--
-<div id="portfolio">
+<div id="Contact">
   <div class="section-title text-center center">
     <div class="overlay">
       <h2>Gallery</h2>
