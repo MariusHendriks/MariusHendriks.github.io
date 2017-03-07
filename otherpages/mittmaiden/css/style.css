@@ -258,6 +258,7 @@ video#bgv{
 	width: auto;
 	height: 800px;
 	background-position: center;
+	padding-top: 30px;
 }
 .headertext{
 	font-size: 30px;
