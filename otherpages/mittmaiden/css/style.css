@@ -267,6 +267,12 @@ video#bgv{
     letter-spacing: 2px;
 	font-weight: 900;
 }
+.vidBox{
+    min-width: 100%;
+    min-height: 100%;
+	width: auto;
+	height: auto;
+}
 
 
 .intro {
