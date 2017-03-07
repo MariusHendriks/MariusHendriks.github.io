@@ -1,7 +1,6 @@
 
 function main() {
-	// start video fade in
-	aftervideo.style.opacity = 0; 
+	// start video fade out
 var e = document.getElementById("bgv");
 e.style.opacity = 0;
 
@@ -19,9 +18,9 @@ vid.addEventListener('ended', function () {
         vid.style.opacity = op2;
         vid.style.filter = 'alpha(opacity=' + op2 * 100 + ")";
         op2 -= op2 * 0.1 || 0.1;
-    }, 50);
+    }, 30);
 });
-//start video fade out
+//start video fade in
 function fade(element) {
     var op = 0;
     var timer = setInterval(function() {
@@ -32,28 +31,27 @@ function fade(element) {
         element.style.opacity = op;
         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op += op * 0.1 || 0.1;
-    }, 50);
+    }, 30);
 }
 //switch video
 vid.addEventListener("ended", hideVideo, false);
 aftervideo.style.display='none';
-
+aftervideo.style.opacity = 0;
 function hideVideo() {
 	setTimeout(
 		function(){
 			var vid=document.getElementById('bgv');
 			var aftervideo=document.getElementById('aftervideo');
 			vid.removeEventListener("ended", hideVideo, false);
-			vid.style.display='none'; 
+			vid.style.display='none';
 
 			
 			fade(aftervideo);
 			aftervideo.style.display='block';
 			
-		}, 3000);
+		}, 2000);
 	}
 
-//fade in image
 
 	
 $(document).ready(function(){
