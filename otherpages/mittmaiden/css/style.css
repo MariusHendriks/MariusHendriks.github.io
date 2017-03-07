@@ -1,11 +1,13 @@
+*{
+margin: 0px;
+}
 body, html {
 	font-family: 'Raleway', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #777;
 	font-weight: 300;
-	width: 100% !important;
-	height: 100% !important;
+
 }
 h2 {
 	margin: 0 0 20px 0;
@@ -226,14 +228,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 video#bgv{
-    min-width: 80%;
-    min-height: 80%;
-	margin-left: 10%;
+    min-width: 100%;
+    min-height: 100%;
 	width: auto;
 	height: auto;
 	background-image: url("about.png") no-repeat;
 	background-size: cover;
-	margin-top: 3%;
 }
 @media screen and (max-width: 1600px;) {
 	video#bgv{
@@ -350,10 +350,6 @@ header .intro-text {
 }
 #restaurant-menu .section-title h2 {
 	color: #fff;
-}
-#restaurant-menu img {
-	width: 300px;
-	box-shadow: 15px 0 #a7c44c;
 }
 #restaurant-menu h3 {
 	padding: 10px 0;

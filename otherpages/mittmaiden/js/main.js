@@ -1,6 +1,9 @@
 
 function main() {
-	// start video fade out
+	
+	
+	
+// start video fade out
 var e = document.getElementById("bgv");
 e.style.opacity = 0;
 
@@ -11,6 +14,7 @@ vid.oncanplaythrough = function() {
 };
 vid.addEventListener('ended', function () {
   var op2 = 1;
+  
 	var timer2 = setInterval(function() {
         if (op2 <= 0) {
         	clearInterval(timer2);
