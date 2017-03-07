@@ -111,6 +111,7 @@ function fade(element) {
 //switch video
 vid.addEventListener("ended", hideVideo, false);
 aftervideo.style.display='none';
+aftervideo.style.opacity = 0;
 function hideVideo() {
 	setTimeout(
 		function(){
@@ -118,13 +119,16 @@ function hideVideo() {
 			var aftervideo=document.getElementById('aftervideo');
 			vid.removeEventListener("ended", hideVideo, false);
 			vid.style.display='none';
+
+			
+			fade(aftervideo);
 			aftervideo.style.display='block';
+			
 		}, 3000);
 	}
 
+//fade in image
 
-
-	
 	
 	
 </script>
