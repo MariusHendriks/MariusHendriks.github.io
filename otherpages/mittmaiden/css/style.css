@@ -172,6 +172,58 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-color: #628d0f;
 }
 /* Header Section */
+#dot-nav{    
+	right: 10px;
+	top: 50%;
+	margin-top: -50px;
+	height: 100px;
+	z-index: 999;
+}
+
+#dot-nav ul { 
+	list-style: none;
+	margin-right: 50px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+}
+#dot-nav li {
+	position: relative;
+	background-color: #bdc3c7;
+	border:3px solid #bdc3c7;
+	border-radius: 15px 15px 15px 15px;
+	cursor: pointer;
+	padding: 5px;
+	height: 10px;
+	margin: 10px 10px 0px 0px;
+	width: 10px;
+	vertical-align:bottom;
+}
+#dot-nav li.active, #dot-nav li:hover {
+	background-color: #9C0D44;
+}
+
+#dot-nav a {
+	outline: 0;
+	vertical-align:top;
+	margin: 0px 0px 0px 25px;
+	position: relative;
+	top:-5px;
+}
+.awesome-tooltip + .tooltip > .tooltip-inner {
+    background-color: #9C0D44; 
+    color: #f5f5f5; 
+    border: 1px solid #9C0D44; 
+}
+.awesome-tooltip + .tooltip.left > .tooltip-arrow{
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #9C0D44;
+}
 
 video#bgv{
     min-width: 80%;
@@ -197,6 +249,14 @@ video#bgv{
 .logo{
 	width: 30%;
 	height: 30%;
+}
+.aftervideo{
+	background-image: url("../img/menu-bg.jpg");
+	background-size: cover;
+	min-width: 100%;
+    min-height: 100%;
+	width: auto;
+	height: 800px;
 }
 .headertext{
 	font-size: 30px;
