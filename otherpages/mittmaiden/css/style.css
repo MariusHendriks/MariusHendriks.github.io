@@ -204,7 +204,7 @@ video#bgv{
 	min-width: 100%;
     min-height: 100%;
 	width: auto;
-	height: auto; 
+	height: 800px;
 }
 .headertext{
 	font-size: 30px;

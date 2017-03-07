@@ -109,9 +109,8 @@ function fade(element) {
         op += op * 0.1 || 0.1;
     }, 50);
 }
-var vid=document.getElementById('bgv');
 vid.addEventListener("ended", hideVideo, false);
-
+aftervideo.style.display='none';
 function hideVideo() {
 	setTimeout(
 		function(){
