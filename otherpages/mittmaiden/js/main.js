@@ -36,7 +36,7 @@ function fade(element) {
         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op += op * 0.1 || 0.1;
     }, 30);
-}
+}   
 //switch video
 vid.addEventListener("ended", hideVideo, false);
 aftervideo.style.display='none';
