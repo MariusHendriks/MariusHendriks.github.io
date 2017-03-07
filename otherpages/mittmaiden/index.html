@@ -49,8 +49,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#Story" class="page-scroll">The story</a></li>
-        <li><a href="#restaurant-menu" class="page-scroll">Mitts</a></li>
-        <li><a href="#portfolio" class="page-scroll">Contact</a></li>
+        <li><a href="#Mitts" class="page-scroll">Mitts</a></li>
+        <li><a href="#contact" class="page-scroll">Contact</a></li>
         <!--<li><a href="#team" class="page-scroll">Chefs</a></li>
         <li><a href="#call-reservation" class="page-scroll">Contact</a></li>-->
       </ul>
@@ -75,7 +75,7 @@
 </div>
 
 <script>
-
+// start video fade in
 var e = document.getElementById("bgv");
 e.style.opacity = 0;
 
@@ -85,7 +85,6 @@ vid.oncanplaythrough = function() {
     fade(e);
 };
 vid.addEventListener('ended', function () {
-	console.log("test")
   var op2 = 1;
 	var timer2 = setInterval(function() {
         if (op2 <= 0) {
@@ -96,7 +95,7 @@ vid.addEventListener('ended', function () {
         op2 -= op2 * 0.1 || 0.1;
     }, 50);
 });
-
+//start video fade out
 function fade(element) {
     var op = 0;
     var timer = setInterval(function() {
@@ -109,6 +108,7 @@ function fade(element) {
         op += op * 0.1 || 0.1;
     }, 50);
 }
+//switch video
 vid.addEventListener("ended", hideVideo, false);
 aftervideo.style.display='none';
 function hideVideo() {
@@ -122,9 +122,8 @@ function hideVideo() {
 		}, 3000);
 	}
 
-	
 
-	
+
 	
 	
 	
@@ -152,7 +151,8 @@ function hideVideo() {
 </div>
 <!-- Restaurant Menu Section -->
 <!--
-<div id="restaurant-menu">
+<div id="mitts">
+<div id="mitts">
   <div class="section-title text-center center">
     <div class="overlay">
       <h2>Material</h2>
@@ -273,7 +273,7 @@ function hideVideo() {
 </div>
 <!-- Portfolio Section -->
 <!--
-<div id="portfolio">
+<div id="Contact">
   <div class="section-title text-center center">
     <div class="overlay">
       <h2>Gallery</h2>
