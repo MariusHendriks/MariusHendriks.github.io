@@ -94,7 +94,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 /* Navigation */
 #menu {
-	padding: 20px;
+	padding-top: 60px;
+	padding-right: 100px;
 	transition: all 0.8s;
 }
 #menu.navbar-default {
@@ -110,16 +111,29 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
-	color: #bdc3c7;
+	color: #000;
 	font-weight: 900;
-	font-size: 15px;
+	font-size: 130%;
 	padding: 5px 0;
 	border: 2px solid transparent;
 	letter-spacing: 0.5px;
-	margin: 10px 15px 0 15px;
+	margin: 10px 50px 0 15px;
+}
+@media screen and (max-width: 1930px) {
+    #menu.navbar-default .navbar-nav > li > a {
+		font-size: 130%;
+	}
+	.hide1930up{
+		display: none;
+	}
+}
+@media screen and (min-width: 1930px) {
+	.hide1930down{
+		display: none;
+	}
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #A51F44;
+	color: #A61E44;
 }
 
 .on {
@@ -177,7 +191,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Header Section */
 #dot-nav{    
 	right: 10px;
-	top: 50%;
+	top: 60%;
 	margin-top: -50px;
 	height: 100px;
 	z-index: 999;
@@ -185,23 +199,22 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 #dot-nav ul { 
 	list-style: none;
-	margin-right: 50px;
+	margin-right: 100px;
 	margin-left: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 0;
 }
 #dot-nav li {
-	position: relative;
-	background-color: #bdc3c7;
-	border:3px solid #bdc3c7;
-	border-radius: 15px 15px 15px 15px;
-	cursor: pointer;
-	padding: 5px;
-	height: 10px;
-	margin: 10px 10px 0px 0px;
-	width: 10px;
-	vertical-align:bottom;
+    position: relative;
+    background-color: #7D7D7D;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+    padding: 5px;
+    height: 20px;
+    margin: 25px 25px 0px 0px;
+    width: 20px;
+    vertical-align: bottom;
 }
 #dot-nav li.active, #dot-nav li:hover {
 	background-color: #9C0D44;
