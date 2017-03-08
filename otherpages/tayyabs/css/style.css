@@ -78,6 +78,7 @@ p.headetext{
 .contactusMenu:hover{
 	color: #4D276F;
 }
+
 .bookatableMenu{
 	background-color:#BF9F62;
 	color: #fff;
@@ -89,6 +90,13 @@ p.headetext{
 	margin-right: 30px;
 	width: 200px;
 	border-radius: 3px;
+}
+.jointhefamliy{
+	text-transform: uppercase;
+	color: #313131;
+	font-size: 40px;
+	font-weight: 900;
+	margin: 30px;
 }
 .menuoptions{
 	text-transform: uppercase;
