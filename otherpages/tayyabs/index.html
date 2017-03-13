@@ -107,15 +107,48 @@
 	</div>
 	<div class="twittericon">
 	</div>
+	
+	
+	<div class="socialmediaicon">
+		<img id="socialinsta" class="socialmediaiconimg" src="img/instagram.png" />
+	</div>
+	<div class="socialmediaicon">
+		<img id="socialfacebook" class="socialmediaiconimg" src="img/facebook.png" />
+	</div>
+	<div class="socialmediaicon">
+		<img id="socialtwitter" class="socialmediaiconimg" src="img/twitter.png" />
+	</div>
 	<div class="followus">
 		Follow us on:
 	</div>
-	
-	
-	
-	
 </div>
-
+<div class="moresocial">
+	More social media
+</div>
+          
+<div id="map"></div>
+<script>
+  function initMap() {
+	var uluru = {lat: 51.5172403, lng: -0.0634757};
+	var map = new google.maps.Map(document.getElementById('map'), {
+	  zoom: 18,
+	  center: uluru
+	});
+	var marker = new google.maps.Marker({
+	  position: uluru,
+	  map: map
+	});
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-M_r4QrPL5C6ZJ88f63EQlsX8BbG5ft0&callback=initMap">
+</script>
+<div class="footer">
+	<div class="contactusbox">
+		contact us
+		call us on: 020 7247 6400
+	</div>
+</div>
 <!--
 <div id="about">
   <div class="container">
