@@ -167,10 +167,85 @@ p.headetext{
 	border-radius: 5px;
 	color: #fff;
 	text-transform: uppercase;
-	
+}
+@media screen and (max-width: 1330px) {
+	.moresocial{
+		font-size: 105%;
+	}
+}
+@media screen and (max-width: 950px) {
+	#staticmenu{
+		display: none;
+	}
+	.socialmediaicon{
+		display: none;
+	}
+	.followus{
+		display: none;
+	}
+	.moresocial{
+		margin-lefT: 0%;
+		margin: 50px 0px;
+		padding: 0% 10%;
+		margin-left: 10%;
+		width: 80%;
+	}
+	.orderOnline{
+		margin-left: 20%!important;
+		width: 60%!important;
+	}
+	img.tayyabslogoHeader{
+		width: 50%;
+	}
+	.contactusbox{
+		margin-left: 10%!important;
+	}
+	.contactusbox2{
+		margin-left: 10%!important;
+	}
+}
+@media screen and (max-width: 650px) {
+	header .intro-text{
+		padding-bottom: 120px!important;
+	}
+	.jointhefamliy{
+		font-size: 30px;
+		line-height: 120px;
+		margin: 10px;
+	}
+	.contactusbox{
+		font-size: 22px !important;
+	}
+	.contactusbox2{
+		font-size: 24px !important;
+	}
+	.headetext{
+		padding: 0px 20px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.contactusbox{
+		font-size: 90% !important;
+	}
+	.contactusbox2{
+		font-size: 100% !important;
+	}
+	p.headetext{
+		font-size: 24px!important;
+	}
+	.jointhefamliy{
+		font-size: 24px!important;
+		margin: 5px;
+	}
+	.footer{
+		height: 230px!important;
+	}
+	.intro-text{
+		padding-top: 40px!important;
+	}
 }
 #map {
-        height: 500px;
+        height: 400px;
         width: 100%;
 		color: #fff;
        }
@@ -217,20 +292,18 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
-@media screen and (min-width: 992px) {
-	.orderOnline{
-		height:70px;
-		width: 330px;
-		background-color: white;
-		color: #501876;
-		font-size: 25px;
-		text-transform: uppercase;
-		font-weight: 900;
-		text-align: center;
-		margin-left: 35%;
-		line-height: 70px;
-		border-radius: 5px;
-	}
+.orderOnline{
+	height:70px;
+	width: 330px;
+	background-color: white;
+	color: #501876;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-align: center;
+	margin-left: 35%;
+	line-height: 70px;
+	border-radius: 5px;
 }
 .tayyabslogoHeader{
 	opacity: 0.3;
