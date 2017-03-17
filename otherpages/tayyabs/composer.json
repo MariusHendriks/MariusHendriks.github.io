@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mgp25/instagram-php": "^1.6",
+        "cosenary/instagram": "^2.3"
+    }
+}

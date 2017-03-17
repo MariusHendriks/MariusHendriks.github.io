@@ -172,14 +172,24 @@ p.headetext{
 #map {
         height: 500px;
         width: 100%;
-		margin-bottom: 60px;
 		color: #fff;
        }
 .contactusbox{
-	
+	margin-left: 20%;
+	padding-top: 50px;
+	font-size: 27px;
+	color: white;
+	font-weight: 900;
+}
+.contactusbox2{
+	margin-left: 20%;
+	margin-top: 50px;
+	font-size: 32px;
+	color: white;
+	font-weight: 900;
 }
 .footer{
-	height: 400px;
+	height: 260px;
 	background-color: #511876;
 }
 ul, ol {
