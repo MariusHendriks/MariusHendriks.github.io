@@ -101,9 +101,38 @@
 		Tayyabs Menu
 	</div>
 	<div class="aboutusMenu menuoptions">
-		About us
+		Join us
 	</div>
 </div>
+<nav id="nav-main">
+    <ul>
+        <li><a href="">Join us</a></li>
+        <li><a href="">Tayyabs menu</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a target="_blank" href="https://widget.resdiary.com/(S(ob2n2zirwu422zzlxqmdo2nq))/CheckAvailability.aspx?sourceKey=rd&id=4943">Book a table</a></li>
+    </ul>
+</nav>
+<div id="nav-trigger">
+    <span>Menu</span>
+</div>
+<nav id="nav-mobile"></nav>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#nav-mobile").html($("#nav-main").html());
+        $("#nav-trigger span").click(function(){
+            if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                $(this).removeClass("open");
+            } else {
+                $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                $(this).addClass("open");
+            }
+        });
+    });
+
+</script>
 <div id="socialmediabar">
 	<div class="jointhefamliy">
 		Join the tayyabs Family!
@@ -136,7 +165,7 @@
 		</div>
 	</a>
 	<div class="followus">
-		Follow us on:
+		Follow us:
 	</div>
 </div>
 <!-- SnapWidget -->
@@ -144,7 +173,7 @@
 <iframe src="https://snapwidget.com/embed/352217" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
 <a target="_blank"  href="https://www.instagram.com/1tayyabs/">
 <div class="moresocial">
-	More social media
+	View more
 </div>
 </a>
 <div id="map"></div>
@@ -165,14 +194,25 @@
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-M_r4QrPL5C6ZJ88f63EQlsX8BbG5ft0&callback=initMap">
 </script>
 <div class="footer">
-	<div class="contactusbox">
-		Open all day | 12AM - 11:30PM
+	<div class="footerimage">
+		
 	</div>
-	<div class="contactusbox2">
-		83-89 FIELDGATE ST, LONDEN E1 1JU<BR/>
-		Call us: 020 7247 6400
+	<div class="footertext">
+		<div class="footerH1">
+			TAYYABS
+		</div>
+		<div class="footerH3">
+			OPEN ALL DAY | 12AM - 11:30PM | SEVEN DAYS A WEEK
+		</div>
+		<div class="footerH2">
+			83-89 FIELDGATE ST, LONDON E1 1JU
+		</div>
+		<div class="footerH2">
+			Call us: 020 7247 6400
+		</div>
 	</div>
 </div>
+
 <!--
 <div id="about">
   <div class="container">
