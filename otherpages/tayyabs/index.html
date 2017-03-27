@@ -28,7 +28,7 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
-
+<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -85,6 +85,7 @@
 
 <!-- About Section -->
 
+
 <div id="staticmenu">
 	<div class="menuLogoMenu">
 		<img class="tayyabslogofinal" src="img/tayyabslogo_final.png" />
@@ -94,7 +95,7 @@
 			Book a table
 		</div>
 	</a>
-	<div class="contactusMenu menuoptions">
+	<div onclick="scrolldown()" id="contactusscrolldown" class="contactusMenu menuoptions">
 		Contact us
 	</div>
 	<div class="tayyabsMenu menuoptions">
@@ -108,7 +109,7 @@
     <ul>
         <li><a href="">Join us</a></li>
         <li><a href="">Tayyabs menu</a></li>
-        <li><a href="">Contact us</a></li>
+        <li><a onclick="scrolldown()" >Contact us</a></li>
         <li><a target="_blank" href="https://widget.resdiary.com/(S(ob2n2zirwu422zzlxqmdo2nq))/CheckAvailability.aspx?sourceKey=rd&id=4943">Book a table</a></li>
     </ul>
 </nav>
@@ -131,7 +132,11 @@
             }
         });
     });
+	
+	function scrolldown() {
+		 $("html, body").animate({ scrollTop: $(document).height() }, 1000);
 
+	}
 </script>
 <div id="socialmediabar">
 	<div class="jointhefamliy">
