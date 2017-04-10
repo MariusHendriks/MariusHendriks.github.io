@@ -136,7 +136,9 @@ p.headetext{
 }
 .tayyabslogofinal{
 	width: 130px;
-	margin: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 70px;
 	float:left;
 }
 .clearfix:after {
@@ -165,11 +167,16 @@ p.headetext{
 	border: 1px solid #4C2872;
 	font-size: 150%;
 	font-weight: 900;
+	
 	margin: 60px auto;
     width: 30%;
 	border-radius: 5px;
 	color: #4C2872;
 	text-transform: uppercase;
+}
+.moresocialContainer{
+	width: 100%;
+	float:left;
 }
 @media screen and (max-width: 1330px) {
 	.moresocial{
@@ -197,7 +204,7 @@ p.headetext{
 	}
 	
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
 	#staticmenu{
 		display: none;
 	}
@@ -357,7 +364,7 @@ p.headetext{
 	width: 350px;
 	float: left;
 	height: 230px;
-	margin-left: 5%;
+	margin-left: 70px;
 	margin-top: 100px;	
 }
 .footertext{
@@ -408,8 +415,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .orderOnline{
 	height:70px;
 	width: 330px;
-	background-color: white;
-	color: #501876;
+	color: #fff;
 	font-size: 25px;
 	text-transform: uppercase;
 	font-weight: 900;
@@ -417,6 +423,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-left: 35%;
 	line-height: 70px;
 	border-radius: 5px;
+	border: 1px solid #fff;
 }
 .tayyabslogoHeader{
 	opacity: 0.3;
@@ -540,7 +547,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 header .intro-text {
 	padding-top: 150px;
-	padding-bottom: 400px;
+	padding-bottom: 200px;
 	text-align: center;
 
 }
@@ -1037,7 +1044,26 @@ nav#nav-mobile {
 
 /* =Media Queries
 -------------------------------------------------------------- */
-@media all and (max-width: 950px) {
+
+@media all and (max-width: 800px) {
+.instagram_picture{
+	width: 50%!important;
+}
+#instapictures2{
+	display: none;
+}
+}
+@media all and (max-width: 480px) {
+.instagram_picture{
+	width: 100%!important;
+}
+.picture4{
+	display: none;
+	}
+}
+
+
+@media all and (max-width: 1000px) {
   #nav-trigger {
     display: block;
 margin-left: 80%;
@@ -1146,12 +1172,43 @@ p.headetext{
 	width: 200px;
 	border-radius: 3px;
 }
+.instagram_picture{
+	width: 25%;
+	float:left;
+}
+.instapictures{
+	width: 100%;
+	float:left;
+}
+.picture1{
+	background-image: url('../img/instagram/instapicture1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.picture2{
+	background-image: url('../img/instagram/instapicture2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.picture3{
+	background-image: url('../img/instagram/instapicture3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.picture4{
+	background-image: url('../img/instagram/instapicture4.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;	
+}
+
 .jointhefamliy{
 	text-transform: uppercase;
 	color: #313131;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 900;
-	margin: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 70px;
 	float:left;
 }
 .followus{
@@ -1182,11 +1239,6 @@ p.headetext{
 	height: 160px;
 	line-height: 160px;
 	padding-right: 50px;
-}
-.tayyabslogofinal{
-	width: 130px;
-	margin: 30px;
-	float:left;
 }
 .clearfix:after {
 	visibility: hidden;
@@ -1225,7 +1277,7 @@ p.headetext{
 		font-size: 105%;
 	}
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
 	#staticmenu{
 		display: none;
 	}
@@ -1350,21 +1402,20 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 .orderOnline{
-	height:70px;
-	width: 330px;
-	background-color: white;
-	color: #501876;
-	font-size: 25px;
-	text-transform: uppercase;
-	font-weight: 900;
-	text-align: center;
-	margin-left: 35%;
-	line-height: 70px;
-	border-radius: 5px;
+    height: 70px;
+    width: 290px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    text-align: center;
+    margin-left: 38.5%;
+    line-height: 70px;
+    border-radius: 5px;;
 }
 .tayyabslogoHeader{
 	opacity: 0.3;
-	width: 30%;
+	width: 20%;
 	margin-bottom: 30px;
 }
 /* Navigation */
@@ -1484,7 +1535,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 header .intro-text {
 	padding-top: 150px;
-	padding-bottom: 400px;
+	padding-bottom: 210px;
 	text-align: center;
 
 }
@@ -1977,7 +2028,7 @@ nav#nav-mobile {
 
 /* =Media Queries
 -------------------------------------------------------------- */
-@media all and (max-width: 950px) {
+@media all and (max-width: 1000px) {
   #nav-trigger {
     display: block;
 margin-left: 80%;

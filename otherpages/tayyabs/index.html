@@ -71,7 +71,7 @@
         <div class="row">
           <div class="intro-text">
             <h1><img class="tayyabslogoHeader" src="img/tayyabslogo_wite.png"></h1>
-            <p class="headetext">PURVEYORS OF FINE TRADITIONAL<BR />PUNJANI CUSINE SINCE 1972</p>
+            <p class="headetext">PURVEYORS OF FINE TRADITIONAL<BR />PUNJABI CUISINE SINCE 1972</p>
 			<a target="_blank" href="https://deliveroo.co.uk/menu/london/whitechapel/tayyabs?utm_source=google&utm_medium=cpc&utm_term=tayyabs&utm_campaign=**^Acquisition^Search^Restaurants^UK^London^EC^Exact^^Tayyabs^~28041~^&gclid=Cj0KEQiA9P7FBRCtoO33_LGUtPQBEiQAU_tBgDkWaBFj9FxnXFCuznHqpWFvr0rDsNXy8lu85ChfvBoaAgv18P8HAQ">
 			<div class="orderOnline">
 				Order Online
@@ -102,12 +102,12 @@
 		Tayyabs Menu
 	</div>
 	<div class="aboutusMenu menuoptions">
-		Join us
+		About us
 	</div>
 </div>
 <nav id="nav-main">
     <ul>
-        <li><a href="">Join us</a></li>
+        <li><a href="">About us</a></li>
         <li><a href="">Tayyabs menu</a></li>
         <li><a onclick="scrolldown()" >Contact us</a></li>
         <li><a target="_blank" href="https://widget.resdiary.com/(S(ob2n2zirwu422zzlxqmdo2nq))/CheckAvailability.aspx?sourceKey=rd&id=4943">Book a table</a></li>
@@ -173,12 +173,51 @@
 		Follow us:
 	</div>
 </div>
+<div class="instapictures">
+	<div class="instagram_picture picture1">
+	</div>
+	<div class="instagram_picture picture2">
+	</div>
+	<div class="instagram_picture picture3">
+	</div>
+	<div class="instagram_picture picture4">
+	</div>
+	</div>	
+	<div class="instapictures" id="instapictures2">
+	<div class="instagram_picture picture3">
+	</div>
+	<div class="instagram_picture picture1">
+	</div>
+	<div class="instagram_picture picture4">
+	</div>
+	<div class="instagram_picture picture2">
+	</div>
+</div>
+<script>
+$(function() {
+    var div = $('.instagram_picture');
+    var width = div.width();
+    
+    div.css('height', width);
+});
+window.onresize = function(event) {
+    $(function() {
+    var div = $('.instagram_picture');
+    var width = div.width();
+    
+    div.css('height', width);
+});
+};
+</script>
 <!-- SnapWidget -->
+<!--
 <script src="https://snapwidget.com/js/snapwidget.js"></script>
-<iframe src="https://snapwidget.com/embed/352217" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+<iframe src="https://snapwidget.com/embed/352217" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>-->
 <a target="_blank"  href="https://www.instagram.com/1tayyabs/">
-<div class="moresocial">
-	View more
+<div class="moresocialContainer">
+	<div class="moresocial">
+		View more
+	</div>
 </div>
 </a>
 <div id="map"></div>
